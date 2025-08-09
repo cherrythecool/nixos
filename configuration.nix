@@ -69,6 +69,7 @@
     pulse.enable = true;
     jack.enable = true;
   };
+  #hardware.alsa.enablePersistence = true;
 
   # Enable touchpad support (enabled default in most desktopManager).
   services.libinput.enable = true;
@@ -89,7 +90,6 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
      pkgs.git
-     pkgs.pavucontrol
      pkgs.alsa-utils
   ];
 
