@@ -88,11 +88,9 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-     pkgs.ungoogled-chromium
      pkgs.git
      pkgs.pavucontrol
      pkgs.alsa-utils
-     pkgs.btop
   ];
 
   xdg.portal.enable = true;
