@@ -69,7 +69,7 @@
     pulse.enable = true;
     jack.enable = true;
   };
-  #hardware.alsa.enablePersistence = true;
+  hardware.alsa.enablePersistence = true;
 
   # Enable touchpad support (enabled default in most desktopManager).
   services.libinput.enable = true;
