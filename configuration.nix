@@ -81,9 +81,12 @@
     isNormalUser = true;
     description = "riley";
     extraGroups = [ "networkmanager" "wheel" ];
+    shell = pkgs.fish;
     packages = with pkgs; [
     ];
   };
+
+  programs.fish.enable = true;
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
@@ -91,6 +94,7 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
+     pkgs.wl-clipboard
      pkgs.git
      pkgs.alsa-utils
   ];
