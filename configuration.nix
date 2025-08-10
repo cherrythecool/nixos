@@ -102,6 +102,7 @@
      pkgs.wl-clipboard
      pkgs.git
      pkgs.alsa-utils
+     pkgs.wayland-scanner
   ];
 
   xdg.portal.enable = true;
