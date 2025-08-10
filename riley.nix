@@ -10,6 +10,7 @@
 		btop
 		ghostty
 		fooyin
+        mpv
 
         # Dev tooling
         clang
