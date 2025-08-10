@@ -86,7 +86,12 @@
     ];
   };
 
-  programs.fish.enable = true;
+  programs.fish = {
+    enable = true;
+    interactiveShellInit = ''
+        set fish_greeting
+    '';
+  };
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
