@@ -19,6 +19,10 @@
 
         zig
         zls
+
+        # Games
+        steam
+        wineWowPackages.stagingFull
 	];
 
     programs.fish.enable = true;
