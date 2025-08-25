@@ -13,9 +13,13 @@
         mpv
 
         # Dev tooling
+        vscode-fhs
+
         clang
         clang-tools
         gnumake
+        cmake
+        openssl
 
         zig
         zls
