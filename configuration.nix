@@ -96,6 +96,11 @@
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
+  services.usbmuxd = {
+	enable = true;
+	package = pkgs.usbmuxd2;
+  };
+
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
@@ -103,6 +108,10 @@
      pkgs.git
      pkgs.alsa-utils
      pkgs.wayland-scanner
+     
+     # iOS Devices
+     pkgs.libimobiledevice
+     pkgs.ifuse
   ];
 
   xdg.portal.enable = true;
